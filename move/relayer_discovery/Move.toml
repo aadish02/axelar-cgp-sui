@@ -1,0 +1,25 @@
+[package]
+name = "RelayerDiscovery"
+version = "0.1.0"
+edition = "2024"
+published-at = "0x2b839b25c7133e5e0f8f585cb2e89bf430a6585a88c4a0343ae3b246372d431c"
+
+[dependencies]
+[dependencies.Sui]
+git = "https://github.com/MystenLabs/sui.git"
+subdir = "crates/sui-framework/packages/sui-framework"
+rev = "mainnet-v1.38.3"
+
+[dependencies.VersionControl]
+git = "https://github.com/aadish02/axelar-cgp-sui.git"
+subdir = "move/version_control"
+rev = "v1.0.0"
+
+[dependencies.AxelarGateway]
+git = "https://github.com/aadish02/axelar-cgp-sui.git"
+subdir = "move/axelar_gateway"
+rev = "v1.0.0"
+
+[addresses]
+relayer_discovery = "0x2b839b25c7133e5e0f8f585cb2e89bf430a6585a88c4a0343ae3b246372d431c"
+clock = "0x6"

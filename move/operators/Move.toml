@@ -1,0 +1,14 @@
+[package]
+name = "Operators"
+version = "0.1.0"
+edition = "2024"
+published-at = "0x013d0f9713b4b615f7234c470d8dfa851b7fecb11528319fbd5e618849dd064f"
+
+[dependencies]
+[dependencies.Sui]
+git = "https://github.com/MystenLabs/sui.git"
+subdir = "crates/sui-framework/packages/sui-framework"
+rev = "mainnet-v1.38.3"
+
+[addresses]
+operators = "0x013d0f9713b4b615f7234c470d8dfa851b7fecb11528319fbd5e618849dd064f"

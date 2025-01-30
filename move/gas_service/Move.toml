@@ -1,0 +1,24 @@
+[package]
+name = "GasService"
+version = "0.1.0"
+edition = "2024"
+published-at = "0xc10dd54f42a2f3ebdb8f113bd0a0627934c90e608d1e32e5fd0c7ae4d03d93b3"
+
+[dependencies]
+[dependencies.Sui]
+git = "https://github.com/MystenLabs/sui.git"
+subdir = "crates/sui-framework/packages/sui-framework"
+rev = "mainnet-v1.38.3"
+
+[dependencies.VersionControl]
+git = "https://github.com/aadish02/axelar-cgp-sui.git"
+subdir = "move/version_control"
+rev = "v1.0.0"
+
+[dependencies.AxelarGateway]
+git = "https://github.com/aadish02/axelar-cgp-sui.git"
+subdir = "move/axelar_gateway"
+rev = "v1.0.0"
+
+[addresses]
+gas_service = "0xc10dd54f42a2f3ebdb8f113bd0a0627934c90e608d1e32e5fd0c7ae4d03d93b3"
